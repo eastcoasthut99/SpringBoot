@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1> Thymeleaf Conditions </h1>
+
+
+<!-- Using the th:if -->
+
+ your are  <span th:text="${age}"> </span>  year old 
+ <br> 
+           
+           <span th:if="${age} >= 20"> and you can vote </span><br>    <!-- also can use &gt , greater than -->
+           
+           
+           <span th:if="${age} &lt 20"> Currently,  you are not yet old enough to vote 
+           <br><br>
+           Currently you are you not old enough for beer
+           </span>     <!--  also can use <= , it mean less than -->
+
+<!-- Using the th:switch --> 
+<div th:switch="${age} >= 18">
+<p th:case="${true}">  You can Legally Marry   </p>
+<p th:case="${false}"> Legal wise, You cannot Marry </p>
+<br><br>
+<a href="http://localhost:8080/">Back to Questionaire Input Page</a>
+
+</body>
+
+
+</html>
