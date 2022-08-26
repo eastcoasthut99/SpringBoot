@@ -1,0 +1,37 @@
+<html xmlns:th="http//thymeleavf.org">
+
+<head>
+
+</head>
+
+<body>
+
+<p th:text="${numbers}"/>
+
+<table>
+
+<thead>
+       <tr>
+            <th> Number <th>
+       </tr> 
+</thead>
+
+<tbody>
+       <tr>
+       
+            <tr th:each="num: ${numbers}" >
+            <span th:text="${num}" />
+            <td th:text="${num}" />
+            
+       </tr>
+</tbody>
+
+
+</table>
+
+
+</body>
+
+
+
+</html>
